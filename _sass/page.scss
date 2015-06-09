@@ -1,0 +1,24 @@
+/* --------------- */
+/* Page styles
+/* --------------- */
+#page-container {
+}
+#page-content {
+}
+.page-section {
+    padding: 20px 0;
+
+    .section {
+        max-width: 920px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 960px) {
+    #page-content {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 10px;
+        @include border-box;
+    }
+}

@@ -1,0 +1,25 @@
+/* =========================================================================== */
+/* Mobile nav toggle
+/* =========================================================================== */
+
+/* --------------- */
+/* Fonts
+/* --------------- */
+$font_base: "Trebuchet MS", sans-serif;
+$font_sans: "Trebushet MS", sans-serif;
+$font_serif: "Georgia", serif;
+
+
+/* --------------- */
+/* Colors
+/* --------------- */
+$yellow: #fefff1;
+
+
+/* --------------- */
+/* Mixins
+/* --------------- */
+@mixin border-box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
