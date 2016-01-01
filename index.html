@@ -3,30 +3,11 @@ layout: default
 title: georgedeesmith.com
 ---
 
-<section id="hero-container">
-    <div id="hero-mask"></div>
-    <div id="hero-signature">
-        <img src="{{ site.baseurl }}images/signature.png" id="signature" src="George Dee Smith" id="hero-signature" />
-    </div>
-</section>
+{% include partials/bio.html %}
 
-{% include partials/nav.html %}
+{% include partials/locations.html %}
 
-<section class="page-section">
-    <div class="section">
-    About
-    </div>
-</section>
+{% include partials/work.html %}
 
-<section class="page-section">
-    <div class="section">
-    {% include partials/lorem.html %}
-    {% include partials/lorem.html %}
-    {% include partials/lorem.html %}
-    {% include partials/lorem.html %}
-    {% include partials/lorem.html %}
-    {% include partials/lorem.html %}
-    {% include partials/lorem.html %}
-    {% include partials/lorem.html %}
-    </div>
-</section>
+{% include partials/contact.html %}
+

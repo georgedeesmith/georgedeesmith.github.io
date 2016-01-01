@@ -1,0 +1,78 @@
+/* --------------- */
+/* Work styles
+/* --------------- */
+
+
+#work-container {
+	font-size: 0;
+}
+.work-item {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	position: relative;	
+	@include border-box;
+
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+	.work-content {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		bottom: 5px;
+		right: 5px;
+		padding: 5px;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.work-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, .4);
+		color: #fff;
+		padding: 5px;
+
+		.work-title {
+			display: block;
+			font: .9rem $font_sans;
+			color: #fff;
+		}
+		.work-info {
+			display: block;
+			font: .9rem $font_serif;
+			color: #ccc;
+			font-style: italic;
+		}
+	}
+}
+
+
+
+
+@media only screen and (min-width: 480px) {
+	.work-item {
+		width: 50%;
+
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	.work-item {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: 920px) {
+	.work-item {
+		width: 25%;
+	}
+}
+

@@ -7,7 +7,13 @@
 @import "base";
 @import "page";
 
-@import "nav";
+@import "bio";
+@import "locations";
+@import "work";
+@import "contact";
 
+@import "nav";
 @import "hero";
 @import "footer";
+
+@import "lib/lightbox"

@@ -2,18 +2,31 @@
 /* Page styles
 /* --------------- */
 #page-container {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
-#page-content {
-}
+
 .page-section {
     padding: 20px 0;
+    border-bottom: 1px solid #ccc;
 
     .section {
         max-width: 920px;
         padding: 20px;
         margin: 0 auto;
-    }
+        box-sizing: border-box;
+    }    
+
+    &:nth-child(2n+1) { background-color: #efefef; }
+    &:nth-child(2n+2) { background-color: #ffffff; }
 }
+
+
+
+
 @media only screen and (min-width: 960px) {
     #page-content {
         max-width: 960px;

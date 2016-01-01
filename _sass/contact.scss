@@ -1,0 +1,26 @@
+/* --------------- */
+/* Contact styles
+/* --------------- */
+
+#contact-section {
+    padding: 100px 0;
+}
+
+.facebook-url {
+    text-align: center;
+
+    img {
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+    a {
+        font: 30px/50px $font-sans;
+        vertical-align: middle;
+        color: #aaa;    
+        text-decoration: none;    
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+}

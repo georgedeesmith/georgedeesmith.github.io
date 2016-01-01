@@ -2,9 +2,13 @@
  * Main js file
  */
 
-$(document).ready(function() { 
+// Lightbox options
+lightbox.option({
+	alwaysShowNavOnTouchDevices: true,
+	showImageNumberLabel: false
+});
 
-    var navopts = {}
-    var nav = pinnd($('#nav-container'), navopts);
+
+$(document).ready(function() { 
 
 });

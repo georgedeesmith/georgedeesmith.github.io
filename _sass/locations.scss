@@ -1,0 +1,28 @@
+/* --------------- */
+/* Location styles
+/* --------------- */
+
+.location {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+    .location-title {
+        margin: 0 0 .5rem;
+    }
+    .location-link {
+        font: 1rem "Roboto";
+    }
+    .location-info {
+        line-height: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 720px) {
+    .location {
+        display: inline-block;
+        width: 45%;
+    }
+}

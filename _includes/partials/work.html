@@ -1,0 +1,20 @@
+<section class="page-section">
+    <div class="section">
+        <h1>Work</h1>
+        <p>
+        Please view the images below to see some examples of George's work.
+        </p>
+
+        <div id="work-container">
+        {% for item in site.data.work %}
+            <div class="work-item">
+                <a class="work-content" href="{{ site.baseurl }}images/works/{{ item.img }}" style="background-image: url({{ site.baseurl }}images/works/{{ item.img }})" data-lightbox="work" data-title="{{ item.title }}">
+                    <div class="work-caption">
+                        <span class="work-title">{{ item.title }}</span>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>

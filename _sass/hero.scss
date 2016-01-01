@@ -3,30 +3,36 @@
 /* --------------- */
 
 #hero-container {
-    height: 800px;
-    position: relative;
-    background-image: url(../images/works/timberline.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    z-index: 1;
+    
+    background: #fff url(../images/works/three-nomads.jpg) no-repeat bottom center;
     background-size: cover;
-    background-position: top center;
+
+    #hero-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .4);
+        z-index: 3;
+    }
 }
-#hero-mask {
-    background-color: rgba(0,0,0,.6);
+
+#signature {
     position: absolute;
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
+    right: 0;
+    height: 300px;
     z-index: 5;
-}
-#hero-signature {
-    position: absolute;
-    z-index: 10;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-
-    #signature {
-        width: 80%;
-        max-width: 400px;
-    }
+    background-image: url(../images/signature.png);
+    background-position: center center;
+    background-size: 250px;
+    background-repeat: no-repeat;
 }
