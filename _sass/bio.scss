@@ -9,7 +9,7 @@
         box-sizing: border-box;
         border: 1px solid #ccc;
         background-color: #fff;
-        width: 80%;
+        width: 100%;
         padding: 5px;
     }
 }
@@ -18,7 +18,7 @@
 @media only screen and (min-width: 480px) {
     .bio-aside {
         width: 230px;
-        float: left; 
+        float: left;
         padding-right: 20px;
         margin-bottom: 0;
 
